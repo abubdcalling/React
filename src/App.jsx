@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+// import React from "react";
 import Hero from "./component/Hero";
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  const itemob = {
-    name: "abu said",
-    age: 20,
+  const fun = () => {
+    return alert("fun function");
   };
 
   return (
     <div>
-      <Hero item={itemob} />
+      <Hero fun={fun} />
     </div>
   );
 };
