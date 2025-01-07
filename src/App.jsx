@@ -1,15 +1,12 @@
 import React, { useState } from "react";
+import Hero from "./component/Hero";
 
 const App = () => {
   const [count, setCount] = useState(0);
 
-  let status = true;
-
   return (
     <div>
-      <h1>Login status</h1>
-
-      {}
+      <Hero title="learn with me" />
     </div>
   );
 };
