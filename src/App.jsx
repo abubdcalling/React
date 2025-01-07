@@ -1,16 +1,16 @@
-// import React from "react";
-import Hero from "./component/Hero";
+import { useRef } from "react";
 
 const App = () => {
-  // const [count, setCount] = useState(0);
+  let headline = useRef();
 
-  const fun = () => {
-    return alert("fun function");
+  const change = () => {
+    headline.current.innerText = "hello useref";
   };
 
   return (
     <div>
-      <Hero fun={fun} />
+      <h1 ref={headline}>Here shows data</h1>
+      <button onClick={change}>click</button>
     </div>
   );
 };
