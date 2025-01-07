@@ -4,9 +4,14 @@ import Hero from "./component/Hero";
 const App = () => {
   const [count, setCount] = useState(0);
 
+  const itemob = {
+    name: "abu said",
+    age: 20,
+  };
+
   return (
     <div>
-      <Hero title="learn with me" />
+      <Hero item={itemob} />
     </div>
   );
 };
